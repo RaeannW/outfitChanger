@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="content-left">
+        <canvas id="canvas3d"></canvas>
+      </div>
+      <div class="bg-image">
+        <div class="content-right">
+          <div class="text-button-group">
+            <h1>Change my outfit</h1>
+
+            <div class="shirts">
+              <h2>Shirt</h2>
+              <button class="white" id="whiteShirt"></button>
+              <button class="orange" id="orangeShirt"></button>
+              <button class="red" id="redShirt"></button>
+              <button class="gray" id="grayShirt"></button>
+            </div>
+
+            <div class="skirts">
+              <h2>Skirt</h2>
+              <button class="white" id="whiteSkirt"></button>
+              <button class="orange" id="orangeSkirt"></button>
+              <button class="red" id="redSkirt"></button>
+              <button class="gray" id="graySkirt"></button>
+            </div>
+
+            <div class="shoes">
+              <h2>Shoes</h2>
+              <button class="white" id="whiteShoes"></button>
+              <button class="orange" id="orangeShoes"></button>
+              <button class="red" id="redShoes"></button>
+              <button class="gray" id="grayShoes"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      async
+      src="https://prod.spline.design/eLCsudaK1jBRVjNo/scene.splinecode"
+    ></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@1.9.54/build/runtime.js"
+        }
+      }
+    </script>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
