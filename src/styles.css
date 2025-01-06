@@ -30,12 +30,13 @@ height: auto;
 }
 .text-button-group{
   display: flex;
-  margin-top: 50px;
-  padding: 0 110px 110px 110px;
+  margin-top: 30px;
+  padding: 0 100px 50px 100px;
   flex-direction: column;
   border-radius: 20px;
   box-shadow: 5px 5px 5px #0000002f;
-  background-color: #ffecd1;
+  background-color: #fff3e3;
+  text-align: center;
 }
 h1 {
   font-size: 45px;
@@ -43,17 +44,26 @@ h1 {
   font-family: "Pacifico", serif;
   font-weight: 400;
   color: #2E1A18;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 3px #f1cc9c;
 }
 h2{
+  font-size: 30px;
   color: #2E1A18;
+  font-family: "Pacifico", serif;
+  font-weight: 400;
 }
 button {
   border-radius: 50%;
   width: 40px;
   height: 40px;
   border: none;
-  box-shadow: 3px 3px 3px #0000002f;
+  box-shadow: 3px 3px 3px #f1cc9c;
   margin: 0 5px 0 0;
+}
+button:hover{
+  box-shadow: 3px 3px 3px #e7b471;
+  border: solid #f1cc9c;
 }
 .white{
   background-color: white;
@@ -66,4 +76,32 @@ button {
 }
 .gray{
   background-color: #A9A5A4;
+}
+.heart{
+  font-size: 20px;
+}
+
+/* Star Cursor */
+.star {
+	position: fixed;
+	pointer-events: none;
+}
+
+.star:before, .star:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: '\2726';
+	font-size: 9px;
+}
+
+.star:before {
+	color: transparent;
+	text-shadow: 0 0 3px #C7CFE8;
+}
+
+.star:after {
+	background: #ffffff;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
